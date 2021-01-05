@@ -1,0 +1,32 @@
+{
+  "name": "css-practice",
+  "version": "1.0.0",
+  "description": "css practice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "devstart": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryichk/css-practice"
+  },
+  "keywords": [
+    "css",
+    "design",
+    "practice"
+  ],
+  "author": "ryichk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryichk/css-practice/issues"
+  },
+  "homepage": "https://github.com/ryichk/css-practice#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
