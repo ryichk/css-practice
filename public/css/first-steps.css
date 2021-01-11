@@ -1,0 +1,30 @@
+/* basic elements styles */
+h1 {
+  color: hotpink;
+  text-decoration: underline dotted purple 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+ul {
+  padding: 40px 30px;
+  background-color: #eee;
+  border: 5px solid purple;
+}
+
+li:first-child a {
+  color: green;
+}
+
+li:nth-child(2) a {
+  color: red;
+}
+
+/* class selectors styles */
+.job-title {
+  color: #999;
+  font-weight: bold;
+}
