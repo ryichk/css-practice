@@ -1,0 +1,21 @@
+h2 {
+  border-block-end: 5px solid #333;
+}
+
+.box {
+  inline-size: 200px;
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+  margin-inline-start: 20px;
+  padding-inline-start: 20px;
+  border: 1px solid #333;
+  float: left;
+}
+
+.horizontal {
+  writing-mode: horizontal-tb;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+}
