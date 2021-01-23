@@ -64,3 +64,18 @@
   font-size: 18px;
   line-height: 1.5;
 }
+
+.flex-wrap {
+  width: 300px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-wrap li {
+  list-style: none;
+  border: 1px solid #aaf;
+  padding: 5px;
+  margin: 10px;
+  background-color: #aaf;
+  flex: 1 auto;
+}
