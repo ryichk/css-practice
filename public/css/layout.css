@@ -1,8 +1,81 @@
-p {
+/* Normal Flow */
+.normal-flow p {
   border: 1px solid #333;
   padding: 10px;
 }
 
-span {
+.normal-flow span {
   border: 1px solid #a00;
+}
+
+/* Flexbox */
+.flex-box section {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-box article {
+  padding: 10px;
+  margin: 10px;
+  background-color: cadetblue;
+  flex: 1 200px;
+}
+
+.flex-box article:nth-of-type(3) {
+  flex: 2 200px;
+}
+
+.flex-box .flex-align0 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-box .flex-align0 button {
+  width: 100px;
+  padding: 10px;
+}
+
+.flex-box .flex-align0 button:first-child {
+  order: 1;
+}
+
+.flex-box .flex-align0 button:last-child {
+  order: -1;
+}
+
+.complex-flexbox article:nth-of-type(3) {
+  flex: 3 200px;
+  display: flex;
+  flex-flow: column;
+}
+
+.complex-flexbox article:nth-of-type(3) div:first-child {
+  flex: 1 100px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.complex-flexbox button {
+  flex: 1 auto;
+  margin: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.flex-wrap {
+  width: 300px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-wrap li {
+  list-style: none;
+  border: 1px solid #aaf;
+  padding: 5px;
+  margin: 10px;
+  background-color: #aaf;
+  flex: 1 auto;
 }
