@@ -1,0 +1,194 @@
+/* Normal Flow */
+.normal-flow p {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.normal-flow span {
+  border: 1px solid #a00;
+}
+
+/* Flexbox */
+.flex-box section {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-box article {
+  padding: 10px;
+  margin: 10px;
+  background-color: cadetblue;
+  flex: 1 200px;
+}
+
+.flex-box article:nth-of-type(3) {
+  flex: 2 200px;
+}
+
+.flex-box .flex-align0 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-box .flex-align0 button {
+  width: 100px;
+  padding: 10px;
+}
+
+.flex-box .flex-align0 button:first-child {
+  order: 1;
+}
+
+.flex-box .flex-align0 button:last-child {
+  order: -1;
+}
+
+.complex-flexbox article:nth-of-type(3) {
+  flex: 3 200px;
+  display: flex;
+  flex-flow: column;
+}
+
+.complex-flexbox article:nth-of-type(3) div:first-child {
+  flex: 1 100px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.complex-flexbox button {
+  flex: 1 auto;
+  margin: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.flex-wrap {
+  width: 300px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-wrap li {
+  list-style: none;
+  border: 1px solid #aaf;
+  padding: 5px;
+  margin: 10px;
+  background-color: #aaf;
+  flex: 1 auto;
+}
+
+/* Grid Layout */
+.grid-layout .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 20px;
+  gap: 20px;
+}
+
+.grid-layout .container div {
+  border: 1px solid #aaf;
+  border-radius: 5px;
+  background-color: aquamarine;
+}
+
+.grid-linebase .container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+  gap: 20px;
+}
+
+.grid-linebase header {
+  grid-area: header;
+  border: 1px solid #333;
+  margin-top: 10px;
+  background-color: burlywood;
+}
+
+.grid-linebase article {
+  grid-area: content;
+  border: 1px solid #333;
+  background-color: cadetblue;
+}
+
+.grid-linebase aside {
+  grid-area: sidebar;
+  border: 1px solid #333;
+  background-color: darkgrey;
+}
+
+.grid-linebase footer {
+  grid-area: footer;
+  border: 1px solid #333;
+  background-color: indianred;
+}
+
+/* Float Layout */
+.float-layout .box {
+  float: left;
+  margin-right: 15px;
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: rgb(207, 232, 220);
+  padding: 1em;
+}
+
+.special {
+  background-color: rgb(79, 185, 227);
+  padding: 10px;
+  color: #fff;
+}
+
+.wrapper {
+  background-color: rgb(79, 185, 227);
+  padding: 10px;
+  color: #fff;
+}
+
+/* clearfix ハック */
+/* .wrapper::after {
+  content: "";
+  clear: both;
+  display: block;
+} */
+
+/* オーバーフローを使用する */
+/* .wrapper {
+  overflow: auto;
+} */
+
+/* display: flow-root */
+.wrapper {
+  display: flow-root;
+}
+
+/* Multiple column layout */
+.multicol {
+  /* column-count: 3; */
+  column-width: 200px;
+  column-gap: 20px;
+  column-rule: 4px dotted rgb(207, 232, 220);
+}
+
+.multicol-2 {
+  column-width: 250px;
+  column-gap: 20px;
+}
+
+.card {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  background-color: rgb(207, 232, 220);
+  border: 2px solid rgb(79, 185, 227);
+  padding: 10px;
+  margin: 0 0 1em 0;
+}

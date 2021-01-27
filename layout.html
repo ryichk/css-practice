@@ -6,8 +6,188 @@
     <title>Practice CSS Layout</title>
   </head>
   <body>
-    <button>
-      <a href="/">Back to Home.</a>
-    </button>
+    <div class="layout">
+      <h1>CSS Layout SandBox</h1>
+      <div class="normal-flow">
+        <h2>Basic Document Flow</h2>
+        <p>This is basic bloack level element. </p>
+        <p>width + height = contents + padding + border width/height. </p>
+        <p><span>sample text. </span>sample text. <span>sample inline text.</span></p>
+      </div>
+      <div class="flex-box">
+        <header>
+          <h2>Sample flexbox example</h2>
+        </header>
+        <section>
+          <article>
+            <h3>First article</h3>
+            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everday carry vinyl typewritter.</p>
+          </article>
+          <article>
+            <h3>Second article</h3>
+            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewritter.</p>
+          </article>
+          <article>
+            <h3>Third article</h3>
+            <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everday carry vinyl typewritter.</p>
+            <p>Cray food truck brunch, XOXO +1 keffiyeh pickled chambray waistcoat ennui.</p>
+          </article>
+        </section>
+        <div class="flex-align0">
+          <button>Smile</button>
+          <button>Laugh</button>
+          <button>Wink</button>
+          <button>Shrug</button>
+          <button>Blush</button>
+        </div>
+        <div class="complex-flexbox">
+          <header>
+            <h2>Complex flexbox sample</h2>
+          </header>
+          <section>
+            <article>
+              <h3>First article</h3>
+              <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewritter.</p>
+            </article>
+            <article>
+              <h3>Second article</h3>
+              <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewritter.</p>
+            </article>
+            <article>
+              <div>
+                <button>Smile</button>
+                <button>Laugh</button>
+                <button>Wink</button>
+                <button>Shrug</button>
+                <button>Blush</button>
+              </div>
+              <div>
+                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewritter.</p>
+              </div>
+              <div>
+                <p>Tacos actually microdosing, pour-over semiotics banjo chicharrones retro fanny pack portland everyday carry vinyl typewritter.</p>
+              </div>
+            </article>
+          </section>
+        </div>
+        <ul class="flex-wrap">
+          <li>Turnip</li>
+          <li>greens</li>
+          <li>yarrow</li>
+          <li>ricebean</li>
+          <li>rutabaga</li>
+          <li>endive</li>
+          <li>cauliflower</li>
+          <li>sea lettuce</li>
+          <li>kohlrabi</li>
+          <li>amaranth</li>
+        </ul>
+      </div>
+      <div class="grid-layout">
+        <h2>Simple Grid Layout</h2>
+        <div class="container">
+          <div>One</div>
+          <div>Two</div>
+          <div>Three</div>
+          <div>Four</div>
+          <div>Five</div>
+          <div>Six</div>
+          <div>Seven</div>
+        </div>
+      </div>
+      <div class="grid-linebase">
+        <div class="container">
+          <header>This is my lovely blog</header>
+          <article>
+            <h2>My article</h2>
+            <p>Duis felis orci, pulvinar id metus ut, rutrum luctus orci.</p>
+            <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices.</p>
+          </article>
+          <aside>
+            <h3>Other things</h3>
+            <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices.</p>
+          </aside>
+          <footer>Contact me@mysite.com</footer>
+        </div>
+      </div>
+      <div class="float-layout">
+        <h1>Simple float example</h1>
+        <div class="wrapper">
+          <div class="box">Float</div>
+          <p class="special">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. </p>
+        </div>
+        <p class="cleared">Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.</p>
+        <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est. Nam id risus quis ante semper consectetur eget aliquam lorem. Vivamus tristique elit dolor, sed pretium metus suscipit vel. Mauris ultricies lectus sed lobortis finibus. Vivamus eu urna eget velit cursus viverra quis vestibulum sem. Aliquam tincidunt eget purus in interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      </div>
+      <div class="multicol">
+        <h1>Simple multicol example</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate.
+          Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus
+          laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra
+          egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam
+          erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare
+          egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum
+          sapien.</p>
+        <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere
+          sit amet dapibus ut, facilisis sed est. Nam id risus quis ante semper consectetur eget aliquam lorem. Vivamus
+          tristique elit dolor, sed pretium metus suscipit vel. Mauris ultricies lectus sed lobortis finibus. Vivamus eu
+          urna eget velit cursus viverra quis vestibulum sem. Aliquam tincidunt eget purus in interdum. Cum sociis natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      </div>
+      <div class="multicol-2">
+        <div class="card">
+          <h2>I am the heading</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat
+                vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies
+                tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci
+                vel, viverra egestas ligula.</p>
+        </div>
+        <div class="card">
+          <h2>I am the heading</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat
+                    vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies
+                    tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci
+                    vel, viverra egestas ligula.</p>
+        </div>
+        <div class="card">
+          <h2>I am the heading</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat
+                    vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies
+                    tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci
+                    vel, viverra egestas ligula.</p>
+        </div>
+        <div class="card">
+          <h2>I am the heading</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat
+                    vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies
+                    tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci
+                    vel, viverra egestas ligula.</p>
+        </div>
+        <div class="card">
+          <h2>I am the heading</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat
+                    vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies
+                    tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci
+                    vel, viverra egestas ligula.</p>
+        </div>
+        <div class="card">
+          <h2>I am the heading</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat
+                    vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies
+                    tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci
+                    vel, viverra egestas ligula.</p>
+        </div>
+        <div class="card">
+          <h2>I am the heading</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat
+                    vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies
+                    tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci
+                    vel, viverra egestas ligula.</p>
+        </div>    
+      </div>
+      <button>
+        <a href="/">Back to Home.</a>
+      </button>
+    </div>
   </body>
 </html>
